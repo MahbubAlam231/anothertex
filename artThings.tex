@@ -1,0 +1,16 @@
+
+%--------------------------------------------------------------------
+% artThings.tex
+%--------------------------------------------------------------------
+
+%To remove Chapter n, but numbering of chapter in TableOfContents
+\titleformat{\chapter}
+  {\Large\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+
+
+
+%Removing Chapter number from section number
+\renewcommand\thesection{\arabic{section}}

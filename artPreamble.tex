@@ -1,0 +1,27 @@
+
+%--------------------------------------------------------------------
+% artPreamble.tex
+%--------------------------------------------------------------------
+
+%\documentclass{amsart}
+
+
+
+\input{artUsepackage.tex}
+\input{artEnvironment.tex}
+\input{artMakeat.tex}
+\input{artNewcommands.tex}
+
+
+
+\newenvironment{notation}[1][Notation]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{0.5\itemsep}
+\addtolength{\wideitemsep}{-3pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+
+

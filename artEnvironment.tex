@@ -1,0 +1,56 @@
+
+%--------------------------------------------------------------------
+% artEnvironment.tex
+%--------------------------------------------------------------------
+
+%---------------------------------------------------------------------
+% Normal Environments
+%---------------------------------------------------------------------
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+%---------------------------------------------------------------------
+% Environments with section counter
+%--------------------------------------------------------------------
+
+%\newtheorem{lemmasec}{Lemma}[section]
+%\newtheorem{corollarysec}{Corollary}[section]
+%\newtheorem{examplesec}{Example}[section]
+%\newtheorem{exercisesec}{Exercise}[section]
+
+%---------------------------------------------------------------------
+% Unnumbered Environments
+%---------------------------------------------------------------------
+
+\newtheorem*{utheorem}{Theorem}
+\newtheorem*{ulemma}{Lemma}
+\newtheorem*{ucorollary}{Corollary}
+\newtheorem*{uexample}{Example}
+\newtheorem*{uexercise}{Exercise}
+\newtheorem*{uremark}{Remark}
+
+
+\theoremstyle{definition}
+\newtheorem*{udefinition}{Definition}
+
+%---------------------------------------------------------------------
+% Numbering of equations
+%---------------------------------------------------------------------
+
+\numberwithin{equation}{section}
+
+%---------------------------------------------------------------------
+% QED symbol
+%---------------------------------------------------------------------
+
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
